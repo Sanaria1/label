@@ -14,3 +14,33 @@ label.pack()
 #label.place(x=0,y=1)
 
 window.mainloop()
+
+***********************************
+To add an image to the label: 
+  
+  
+from tkinter import *
+
+
+
+window = Tk()
+
+photo = PhotoImage(file=" Python") #put the image path in section" " 
+
+label = Label(window,
+              text="Hello Python",
+              font=('Arial',40,'bold'),
+              fg='#00FF00',
+              bg='black',
+              relief=RAISED,
+              bd=10,
+              padx=20,
+              pady=20,
+              image=photo,
+              compound='bottom')
+label.pack()
+#label.place(x=0,y=0)
+
+window.mainloop()
+  
+  
